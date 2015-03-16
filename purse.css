@@ -1,14 +1,18 @@
 img {
-	float: left;
 	max-width: 100%;
 	height: auto;
 }
 
 .img-container {
-	float: left;
-	max-width: 100%;
+	width: 80%;
 	height: auto;
+	margin: 0 0 0 auto;
 
+}
+
+.container {
+	position: absolute;
+	width: 100%
 }
 
 h1 {

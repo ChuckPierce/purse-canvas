@@ -1,20 +1,17 @@
 var purseCanvas = document.getElementById('purseCanvas');
-var container = document.getElementsByClassName('img-container');
+var container = document.getElementsByClassName('container');
 
 var ctx = purseCanvas.getContext('2d'),
-	w = purseCanvas.width,
-	h = purseCanvas.height;
-
-console.log(w);
-
+	w = purseCanvas.width = container[0].offsetWidth,
+	h = purseCanvas.height = container[0].offsetHeight;
+console.log(container[0].offsetWidth);
 window.onresize = function() {
-	console.log(container[0].offsetWidth);
 	w = container[0].offsetWidth;
 	h = container[0].offsetHeight;
-	console.log(w);
 }
 
-function drawDots(ctx) {
+function drawCanvas(ctx) {
+	
 	function drawDot(x,y,context) {
 		var dot = new Image(),
 			topX = x + 18,
@@ -42,9 +39,15 @@ function drawDots(ctx) {
 	    	context.restore();
 		}
 	}
-	drawDot(230,200, ctx);
-	drawDot(185,310, ctx);
-	drawDot(170,240, ctx);
+
+	function drawData(context) {
+
+	}
+
+	drawDot(485,200, ctx);
+	drawDot(440,310, ctx);
+	drawDot(425,240, ctx);
+	ctx.fillText('Weight 0.98 Pounds (445 G)', 20, 20);
 }
 
-drawDots(ctx);
+drawCanvas(ctx);
