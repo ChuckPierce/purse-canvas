@@ -26,18 +26,18 @@ function drawDots(ctx) {
 			context.save();
 	    	context.beginPath();
 	    	context.arc(topX,topY,10,0, Math.PI*2, true);
+	    	context.shadowColor = '#000';
+      		context.shadowBlur = 7;
+	    	context.shadowOffsetX = 2;
+      		context.shadowOffsetY = 2;
+      		ctx.fillStyle = 'none';
+			ctx.fill();
 	    	context.closePath();
 	    	context.clip();
 			context.drawImage(dot, x, y, 40,40);
 			context.beginPath();
 	    	context.arc(bottomX, bottomY, 10, 0, Math.PI * 2, true);
 	    	context.clip();
-	  //   	context.shadowColor = '#000';
-   //    		context.shadowBlur = 4;
-	  //   	context.shadowOffsetX = 2;
-   //    		context.shadowOffsetY = 2;
-   //    		ctx.fillStyle = 'none';
-			// ctx.fill();
 	    	context.closePath();
 	    	context.restore();
 		}
