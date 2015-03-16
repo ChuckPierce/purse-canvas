@@ -1,5 +1,5 @@
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -17,6 +17,7 @@ img {
 
 h1 {
 	text-transform: uppercase;
+	margin-left: 10px;
 }
 
 canvas {
