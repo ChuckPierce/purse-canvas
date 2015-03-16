@@ -1,0 +1,27 @@
+img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+}
+
+.img-container {
+	float: left;
+	max-width: 100%;
+	height: auto;
+
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+canvas {
+	position: absolute;
+	max-width: 100%;
+	height: auto;
+}
+
+.dot {
+	border: 2px solid #000;
+	border-radius: 100%;
+}

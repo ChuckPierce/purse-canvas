@@ -1,0 +1,3 @@
+I've attached a design of part of a page, the idea is we want to be able to use CSS/HTML to overlay text annotations on an image but use Javascript so that when the image resizes as you shrink the browser the dots/text stay anchored to their relative positions on the image.
+
+I've attached the base image(base-image.png), which is what it should look like, the source image of the purse(purse.png) and the dot(dot.png), your job (should you choose to accept it :) ), would be to create a standalone HTML page  needed to render as per the design below and have it respond and have the dots/text/lines stay in position as the page width changes and the purse changes width, in Javascript.
