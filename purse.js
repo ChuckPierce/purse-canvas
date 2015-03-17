@@ -4,15 +4,14 @@ var container = document.getElementsByClassName('container');
 var ctx = purseCanvas.getContext('2d'),
 	w = purseCanvas.width = container[0].offsetWidth,
 	h = purseCanvas.height = container[0].offsetHeight;
-console.log(container[0].offsetWidth);
 window.onresize = function() {
 	w = container[0].offsetWidth;
 	h = container[0].offsetHeight;
 }
 
 function drawCanvas(ctx) {
-	
 	function drawDot(x,y,context) {
+
 		var dot = new Image(),
 			topX = x + 18,
 			topY = y + 18,
@@ -70,37 +69,37 @@ function drawCanvas(ctx) {
 	drawDot(425,240, ctx);
 
 	drawData('WEIGHT', 10, 20, ctx);
-	drawBoldData('0.98 Pounds (445 G)', 75, 20);
+	drawBoldData('0.98 Pounds (445 G)', 75, 20, ctx);
 	
 	drawData('LEATHER', 40, 225, ctx);
-	drawBoldData('GOLD DYED PYTHON', 100, 225);
+	drawBoldData('GOLD DYED PYTHON', 100, 225, ctx);
 	drawLine(ctx, 260, 215, 400);
 
 	drawData('BUCKLE', 25, 265, ctx);
-	drawBoldData('RHODIUM-PLATED BRASS', 75, 265);
+	drawBoldData('RHODIUM-PLATED BRASS', 75, 265, ctx);
 	drawLine(ctx, 260, 260, 400);
 
-	drawBoldData('HEAVY GUAGE NYLON STITCH', 55, 335);
+	drawBoldData('HEAVY GUAGE NYLON STITCH', 55, 335, ctx);
 	drawLine(ctx, 260, 325, 400);
 
 	drawData('INSIDE', 155, 400, ctx);
-	drawBoldData('SUEDE LINING', 200, 400);
+	drawBoldData('SUEDE LINING', 200, 400, ctx);
 
-	drawBoldData('7 3/4 INCHES', 560, 80);
-	drawBoldData('(197 MM)', 570, 95);
+	drawBoldData('7 3/4 INCHES', 560, 80, ctx);
+	drawBoldData('(197 MM)', 570, 95, ctx);
 	drawLine(ctx, 455, 120, 750);
 	drawVertical(ctx, 455, 90, 160);
 	drawVertical(ctx, 750, 90, 160);
 
-	drawBoldData('7 1/2 INCHES', 800, 300);
-	drawBoldData('(192 MM)', 810, 315);
+	drawBoldData('7 1/2 INCHES', 800, 300, ctx);
+	drawBoldData('(192 MM)', 810, 315, ctx);
 	drawLine(ctx, 880, 180, 800);
 	drawLine(ctx, 880, 420, 800);
 	drawVertical(ctx, 838, 180, 250);
 	drawVertical(ctx, 838, 350, 420);
 
 	drawBoldData('1 3/4 INCHES', 950, 80);
-	drawBoldData('(26 MM)', 965, 95);
+	drawBoldData('(26 MM)', 965, 95, ctx);
 	drawLine(ctx, 1025, 140, 960);
 	drawVertical(ctx, 1025, 120, 160)
 	drawVertical(ctx, 960, 120, 160)

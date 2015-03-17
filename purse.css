@@ -18,15 +18,23 @@ img {
 h1 {
 	text-transform: uppercase;
 	margin-left: 10px;
+	font-family: sans-serif;
+	font-size: 2em;
 }
 
 canvas {
 	position: absolute;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
 .dot {
 	border: 2px solid #000;
 	border-radius: 100%;
+}
+
+@media (max-width: 754px) {
+	h1 {
+		font-size: 1em;
+	}
 }
